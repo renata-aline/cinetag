@@ -6,7 +6,7 @@ import styles from "./Favoritos.module.css";
 function Favoritos() {
   return (
     <>
-      <Banner imagens="favoritos" />
+      <Banner imagem="favoritos" />
       <Titulo>
         <h1>Meus Favoritos</h1>
       </Titulo>
