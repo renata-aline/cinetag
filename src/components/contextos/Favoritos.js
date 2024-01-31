@@ -28,7 +28,8 @@ export function useFavoritoContext() {
       return setfavorito(novaLista);
     }
 
-    novaLista.splice(novaLista.indexOf(novoFavorito), 1);
+    novaLista.splice(novaLista.findIndex(
+      item => item.id === novaLista.find(item => item.id === novoFavorito.id).id), 1);
     return setfavorito(novaLista);
   }
   return {
